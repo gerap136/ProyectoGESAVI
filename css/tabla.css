@@ -1,0 +1,40 @@
+﻿/* --- Tabla moderna (coordinada con el verde) --- */
+.tabla-moderna {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+    .tabla-moderna th {
+        background-color: #00b300; /* mismo verde */
+        color: white;
+        padding: 12px;
+        text-align: left;
+        border-bottom: 2px solid #009900;
+    }
+
+    .tabla-moderna td {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* Filas alternas y hover con verdes suaves */
+    .tabla-moderna tr:nth-child(even) {
+        background-color: #f4fff4; /* verde muy claro */
+    }
+
+    .tabla-moderna tr:hover {
+        background-color: #e6ffe6;
+    }
+
+    /* Fila seleccionada */
+    .tabla-moderna .selected {
+        background-color: #009900 !important;
+        color: #fff !important;
+        font-weight: bold;
+    }
